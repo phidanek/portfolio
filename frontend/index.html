@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Employment Portal</title>
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='fa fa-align-right' id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="/" class="nav__link" data-link="">
+            <i class="fas fa-home"></i> 
+            <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="/work"  class="nav__link"  data-link="">
+            <i class="fas fa-code"></i> 
+            <span class="links_name">Projects</span>
+          </a>
+          <span class="tooltip">Projects</span>
+        </li>
+        <li>
+          <a href="/about" class="nav__link" data-link="">
+            <i class="fas fa-user"></i>
+            <span class="links_name">About</span>
+          </a>
+          <span class="tooltip">About</span>
+        </li>
+        <li>
+          <a href="/tools" class="nav__link" data-link="">
+            <i class="fas fa-cogs"></i>
+            <span class="links_name">Tools & Skills</span>
+          </a>
+          <span class="tooltip">Tools & Skills</span>
+        </li>
+        <li>
+          <a href="/contact" class="nav__link" data-link="">
+            <i class="fas fa-address-book"></i>
+            <span class="links_name">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+    </div>
+    <section class="home-section">
+      <div id="app"></div>
+      <footer class="footer">
+        <a href="https://github.com/phidanek" title="GitHub" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://za.linkedin.com/in/khano-phidane-b775a6210" title="Linkedin" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:phidanek@gmail.com" title="Email" target="_blank">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/khano_phidane/" title="Instagram" target="_blank" rel="noopener">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <p>PHIDANE Copyright &copy; <span id="currentYear"></span> . All rights reserved || Designed By: Khano Phidane</p>
+    </footer>
+    </section>
+    <script src="/static/js/script.js"></script>    
+    <script type="module" src="/static/js/index.js"></script>
+</body>
+</html>
