@@ -1,14 +1,14 @@
 {
     "name": "spa",
     "version": "1.0.0",
-    "description": "Taken from my YouTube Tutorial: https://www.youtube.com/watch?v=6BozpmSjk-Y",
+    "description": "my portfolio",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "start": "node server.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "khano phidane",
     "license": "MIT",
     "dependencies": {
       "express": "^4.18.2"

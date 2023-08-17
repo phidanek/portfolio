@@ -14,11 +14,14 @@
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
+ 
+}
+.sidebar_item{
+  text-align: center;
 }
 .sidebar.open{
   width: 250px;
 }
-
 .sidebar i{
   color: #fff;
   height: 60px;
@@ -26,6 +29,30 @@
   font-size: 28px;
   text-align: center;
   line-height: 60px;
+}
+header {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about-section {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+  color: #fff;
 }
 .sidebar .nav-list{
   margin-top: 20px;
@@ -102,6 +129,7 @@
 .home-section{
   position: relative;
   background: #E4E9F7;
+  overflow: auto;
   min-height: 100vh;
   top: 0;
   left: 78px;
@@ -120,11 +148,38 @@
   font-weight: 500;
   margin: 18px
 }
+.nav_img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.about-img{
+  width: 50%;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-right: 10px;
+}
+.about-img img{
+  width: 100%;
+  height: 100%;
+}
+.nav_img img {
+  width: 100%;
+  height: 100%;
+
+}
+.hidden {
+  display: none;
+}
 #app {
   background: #343F4F;
   position: fixed;
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 .container {
   display: flex;
@@ -133,7 +188,12 @@
   align-items: center;
   height: 100%;
 }
-
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
 h1 {
   margin: 0;
   color: #fff;
@@ -206,11 +266,243 @@ a:hover{
   border-left: 2px solid #FC6D6D;
   animation: typing 3s steps(10) infinite;
 }
+.title{
+  color: #FC6D6D;
+  padding-bottom: 25px;
+  text-align: center;
+}  
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contact-item {
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
+.contact-item i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-item h3 {
+  margin: 0;
+}
+.contact-form {
+  width: 60%;
+  display: flex;
+
+}
+.form-container {
+  width: 45%;
+  padding-left: 10px;
+  
+}
+.form-img{
+  width: 45%;
+  padding-right: 10px;
+}
+.form-img img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.image-container{
+  width: 50%
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.skills{
+  display: flex;
+}
+.skill{
+  width: 500px;
+  margin: -50px auto;
+  padding: 20px;
+}
+.skill li{
+  margin: 20px 0;
+  padding: 10px;
+  list-style-type: none;
+  color: white; 
+  font-weight: bold;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg,rgba(236,0,140,1),rgba(252,103,103,1)100%);
+}
+.C{
+width: 75%;
+animation: c 3s;
+}
+@keyframes c{
+  0%{
+    width: 0%;
+  }
+  100%{width: 75%;}
+}
+.JavaScript{
+  width: 65%;
+  animation: JavaScript 3s;
+}
+@keyframes JavaScript{
+  0%{
+    width: 0%;
+  }
+  100%{width: 65%;}
+}
+.Python{
+  width: 70%;
+  animation: Python 3s;
+}
+@keyframes Python{
+  0%{
+    width: 0%;
+  }
+  100%{width: 70%;}
+}
+.CP{
+  width: 45%;
+  animation: CP 3s;
+}
+@keyframes CP{
+  0%{
+    width: 0%;
+  }
+  100%{width: 45%;}
+}
+.Java{
+  width: 40%;
+  animation: Java 3s;
+}
+@keyframes Java{
+  0%{
+    width: 0%;
+  }
+  100%{width: 40%;}
+}
+.HTML{
+  width: 70%;
+  animation: HTML 3s;
+}
+@keyframes HTML{
+  0%{
+    width: 0%;
+  }
+  100%{width: 70%;}
+}
+.ASP{
+  width: 80%;
+  animation: ASP 3s;
+}
+@keyframes ASP{
+  0%{
+    width: 0%;
+  }
+  100%{width: 80%;}
+}
+.MS{
+  width: 70%;
+  animation: MS 3s;
+}
+@keyframes MS{
+  0%{
+    width: 0%;
+  }
+  100%{width: 70%;}
+}
+.MySQL{
+  width: 60%;
+  animation: MySQL 3s;
+}
+@keyframes MySQL{
+  0%{
+    width: 0%;
+  }
+  100%{width: 60%;}
+}
+.React{
+  width: 40%;
+  animation: React 3s;
+}
+@keyframes React{
+  0%{
+    width: 0%;
+  }
+  100%{width: 40%;}
+}
+.Node{
+  width: 50%;
+  animation: Node 3s;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@keyframes Node{
+  0%{
+    width: 0%;
+  }
+  100%{width: 50%;}
+}
+.API{
+  width: 55%;
+  animation: API 3s;
+}
+@keyframes API{
+  0%{
+    width: 0%;
+  }
+  100%{width: 55%;}
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
   }
 }
+
 @keyframes slide {
   100%{
     top: -360px;

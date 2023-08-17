@@ -1,7 +1,7 @@
 import Home from "./views/Home.js";
 import Contact from "./views/Contact.js";
 import About from "./views/About.js";
-import Work from "./views/work.js";
+import Work from "./views/Work.js";
 import Tools from "./views/Tools.js";
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");
@@ -29,7 +29,6 @@ const router = async () => {
         { path: "/contact", view: Contact }
     ];
 
-    // Test each route for potential match
     const potentialMatches = routes.map(route => {
         return {
             route: route,
@@ -59,7 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             navigateTo(e.target.href);
         }
+        if (e.target.tagName === "I" || e.target.tagName === "SPAN") {
+            let anchorElement = e.target.closest("a");
+            if (anchorElement && anchorElement.classList.contains("nav__link")) {
+                e.preventDefault();
+                navigateTo(anchorElement.getAttribute("href"));
+            }
+        }
     });
+
 
     router();
 });

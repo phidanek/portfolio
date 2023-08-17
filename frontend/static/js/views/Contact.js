@@ -3,13 +3,12 @@ import AbstractView from "./AbstractView.js";
 export default class extends AbstractView {
     constructor(params) {
         super(params);
-        this.setTitle("Settings");
+        this.setTitle("Contact");
     }
 
     async getHtml() {
-        return `
-            <h1>contact me</h1>
-            <p>contact mee.</p>
-        `;
+        const response = await fetch('./static/js/views/contact.html');
+        const htmlContent = await response.text();
+        return htmlContent;
     }
 }

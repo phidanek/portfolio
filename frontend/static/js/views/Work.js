@@ -3,13 +3,16 @@ import AbstractView from "./AbstractView.js";
 export default class extends AbstractView {
     constructor(params) {
         super(params);
-        this.setTitle("Posts");
+        this.setTitle("Projects");
     }
 
-    async getHtml() {
+    getHtml() {
         return `
-            <h1>Work</h1>
-            <p>You are viewing my work!</p>
+        <div class="bgimg">
+        <div class="middle">
+          <h1>COMING SOON</h1>
+          <hr>
+        </div>
         `;
     }
 }

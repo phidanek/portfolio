@@ -7,12 +7,8 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
-        return `
-            <h1>Tools</h1>
-            <p>
-               Tools
-            </p>
-
-        `;
-    }
+        const response = await fetch('./static/js/views/tools.html');
+        const htmlContent = await response.text();
+        return htmlContent;
+      }
 }

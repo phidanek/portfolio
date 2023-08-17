@@ -3,53 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Employment Portal</title>
+  <title>PHIDANE</title>
   <link rel="stylesheet" href="/static/css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <div class="sidebar">
+
       <div class="logo-details">
         <i class='fa fa-align-right' id="btn"></i>
       </div>
-      <ul class="nav-list">
-        <li>
+      <div class="sidebar_item">
+        <div class="nav_img hidden">
+          <img src="./static/img/khano.jpeg" alt="My Pic" >
+        </div>
+        <div class="nav_item">
           <a href="/" class="nav__link" data-link="">
             <i class="fas fa-home"></i> 
             <span class="links_name">Home</span>
           </a>
-          <span class="tooltip">Home</span>
-        </li>
-        <li>
+        </div>
+        <div class="nav_item">
           <a href="/work"  class="nav__link"  data-link="">
             <i class="fas fa-code"></i> 
             <span class="links_name">Projects</span>
           </a>
-          <span class="tooltip">Projects</span>
-        </li>
-        <li>
+        </div>
+        <div class="nav_item">
           <a href="/about" class="nav__link" data-link="">
             <i class="fas fa-user"></i>
             <span class="links_name">About</span>
           </a>
-          <span class="tooltip">About</span>
-        </li>
-        <li>
+        </div>
+        <div class="nav_item">
           <a href="/tools" class="nav__link" data-link="">
             <i class="fas fa-cogs"></i>
             <span class="links_name">Tools & Skills</span>
           </a>
-          <span class="tooltip">Tools & Skills</span>
-        </li>
-        <li>
+        </div>
+        <div class="nav_item">
           <a href="/contact" class="nav__link" data-link="">
             <i class="fas fa-address-book"></i>
             <span class="links_name">Contact</span>
           </a>
-          <span class="tooltip">Contact</span>
-        </li>
+        </div>
+      </div>
     </div>
     <section class="home-section">
+      
       <div id="app"></div>
       <footer class="footer">
         <a href="https://github.com/phidanek" title="GitHub" target="_blank" rel="noopener">
@@ -67,6 +68,7 @@
         <p>PHIDANE Copyright &copy; <span id="currentYear"></span> . All rights reserved || Designed By: Khano Phidane</p>
     </footer>
     </section>
+
     <script src="/static/js/script.js"></script>    
     <script type="module" src="/static/js/index.js"></script>
 </body>

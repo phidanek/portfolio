@@ -7,12 +7,8 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
-        return `
-            <h1>About</h1>
-            <p>
-                you are viewing my about
-            </p>
-
-        `;
+        const response = await fetch('./static/js/views/about.html');
+        const htmlContent = await response.text();
+        return htmlContent;
     }
 }
